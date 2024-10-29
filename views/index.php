@@ -1,0 +1,1 @@
+<?php // AZO is golden

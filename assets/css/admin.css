@@ -1,0 +1,2179 @@
+:root {
+  --azo-tracking-primary: #0180ff;
+  --azo-tracking-primary-active: #2d46d1;
+  --azo-tracking-primary-bg-light: #dcedff;
+  --azo-tracking-primary-bg-light-2: #f2f8fe;
+
+  --azo-tracking-danger: #f22727;
+  --azo-tracking-danger-active: #de2323;
+  --azo-tracking-danger-bg-light: #fef5f5;
+  --azo-tracking-down-trend: #ff6362;
+  --azo-tracking-down-trend-light: #f4e4e3;
+
+  --azo-tracking-success: #81d681;
+  --azo-tracking-success-active: #5ebe5e;
+  --azo-tracking-success-bg-light: #dbffdb;
+  --azo-tracking-up-trend: #12b981;
+  --azo-tracking-up-trend-light: #deede6;
+
+  --azo-tracking-info: #ffbd5a;
+  --azo-tracking-info-active: #ffa41b;
+  --azo-tracking-info-bg-light: #fdf8f0;
+
+  --azo-tracking-impression: #00e396;
+  --azo-tracking-light-green: #00be7e;
+
+  --azo-tracking-primary-light: #ebf5ff;
+  --azo-tracking-white: #ffffff;
+  --azo-tracking-text-900: #181c32;
+  --azo-tracking-text-800: #3f4254;
+  --azo-tracking-text-700: #5e6278;
+  --azo-tracking-text-600: #7e8299;
+  --azo-tracking-text-500: #a1a5b7;
+  --azo-tracking-text-400: #b5b5c3;
+  --azo-tracking-text-300: #e1e3ea;
+  --azo-tracking-form: #f9f9f9;
+  --azo-tracking-form-focus: #f4f4f4;
+
+  --azo-tracking-body-bg-color: #f5f8fa;
+  --azo-tracking-header-bg-color: #0180ff;
+  --azo-tracking-card-box-shadow: 0px 0px 20px 0px rgba(76, 87, 125, 0.02);
+  --azo-tracking-card-box-shadow-2: 0px 0px 25px rgba(0, 0, 0, 0.15);
+}
+body {
+  background-color: var(--azo-tracking-body-bg-color);
+}
+input,
+textarea,
+select {
+  font-size: 1rem;
+}
+.wp-core-ui select:focus {
+  border: none;
+  box-shadow: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  transition: color 0.2s ease;
+  text-decoration: underline;
+}
+.hide {
+  display: none;
+}
+
+.disable {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.azo-tracking-main h2 {
+  font-size: 1.6em;
+}
+
+/* AZO Margin/Padding */
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+
+/* AZO Elements */
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+.azo-btn,
+.azo-submit-btn .button {
+  --bs-btn-padding-x: 2rem;
+  --bs-btn-padding-y: 0.75rem;
+  --bs-btn-font-family: ;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 400;
+  --bs-btn-line-height: 1;
+  --bs-btn-color: #181c32;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-color: transparent;
+  --bs-btn-border-radius: 0.475rem;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 1px 1px rgba(0, 0, 0, 0.075);
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba("212, 212, 212", 0.5);
+  display: inline-block;
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  font-family: var(--bs-btn-font-family);
+  font-size: var(--bs-btn-font-size);
+  font-weight: var(--bs-btn-font-weight);
+  line-height: var(--bs-btn-line-height);
+  color: var(--bs-btn-color);
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
+  background-color: var(--bs-btn-bg);
+  box-shadow: var(--bs-btn-box-shadow);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.azo-btn.azo-btn-light {
+  color: var(--azo-tracking-text-600);
+  border-color: var(--azo-tracking-form);
+  background-color: var(--azo-tracking-form);
+}
+.azo-btn.azo-btn-light:hover {
+  border-color: var(--azo-tracking-form-focus);
+  background-color: var(--azo-tracking-form-focus);
+}
+.azo-btn.azo-btn-primary,
+.azo-submit-btn .button-primary {
+  color: var(--azo-tracking-white);
+  border-color: var(--azo-tracking-primary);
+  background-color: var(--azo-tracking-primary);
+}
+.azo-btn.azo-btn-primary:hover,
+.azo-submit-btn .button-primary:hover {
+  border-color: var(--azo-tracking-primary-active);
+  background-color: var(--azo-tracking-primary-active);
+}
+.azo-btn.azo-btn-success {
+  color: var(--azo-tracking-text-800);
+  border-color: var(--azo-tracking-success);
+  background-color: var(--azo-tracking-success);
+}
+.azo-btn.azo-btn-success:hover {
+  border-color: var(--azo-tracking-success-active);
+  background-color: var(--azo-tracking-success-active);
+}
+
+/* AZO Tracking Input */
+.azo-tracking-form .azo-tracking-form-control {
+  display: block;
+  width: 50%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: unset;
+  font-weight: 400;
+  line-height: 1.5;
+  background-clip: padding-box;
+  border: 1px solid var(--azo-tracking-text-300);
+  appearance: none;
+  border-radius: 0.475rem;
+  background-color: var(--azo-tracking-white);
+  border-color: var(--azo-tracking-text-300);
+  color: var(--azo-tracking-text-700);
+  transition: color 0.2s ease;
+}
+.azo-tracking-form .azo-tracking-form-control:active,
+.azo-tracking-form .azo-tracking-form-control:focus {
+  background-color: var(--azo-tracking-white);
+  border-color: var(--azo-tracking-text-300);
+  transition: color 0.2s ease;
+}
+.azo-tracking-form .azo-tracking-form-control:focus {
+  outline: 0;
+  box-shadow: false, 0 0 0 0.25rem rgba(var(--azo-component-active-bg), 0.25);
+}
+.azo-tracking-form .azo-tracking-form-control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--azo-tracking-text-500);
+  opacity: 1; /* Firefox */
+}
+.azo-tracking-form .azo-tracking-form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--azo-tracking-text-500);
+}
+.azo-tracking-form .azo-tracking-form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--azo-tracking-text-500);
+}
+
+/* AZO Tracking Apex Chart Custom */
+
+.apexcharts-title-text {
+  font-family: "Arial, sans-serif";
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+.apexcharts-xaxis text,
+.apexcharts-yaxis text {
+  font-family: "Arial, sans-serif";
+  font-size: 12px;
+  color: #666;
+}
+
+/* AZO Tracking Switch */
+.azo-tracking-form .form-check-box {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+  width: 3rem;
+  height: 1.5rem;
+  margin: 0;
+  background-image: var(--bs-form-switch-bg);
+  background-position: left center;
+  border-radius: 3rem;
+  transition: background-position 0.15s ease-in-out;
+  --bs-form-check-bg: transparent;
+  vertical-align: top;
+  background-color: var(--azo-tracking-white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid var(--azo-tracking-text-300);
+}
+.azo-tracking-form .form-check-box:checked::before,
+.azo-tracking-form .form-check-radio:checked::before {
+  display: none;
+}
+.azo-tracking-form .form-check-box:active,
+.azo-tracking-form .form-check-radio:active {
+  filter: brightness(90%);
+}
+.azo-tracking-form .form-check-box:focus,
+.azo-tracking-form .form-check-radio:focus {
+  border-color: var(--azo-tracking-text-400);
+  outline: 0;
+  box-shadow: none;
+}
+.azo-tracking-form .form-check-box:checked,
+.azo-tracking-form .form-check-radio:checked {
+  background-color: var(--azo-tracking-primary);
+  border-color: var(--azo-tracking-primary);
+}
+.azo-tracking-form .form-check-box:checked[type="checkbox"] {
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 11' width='13' height='11' fill='none'%3e%3cpath d='M11.0426 1.02893C11.3258 0.695792 11.8254 0.655283 12.1585 0.938451C12.4917 1.22162 12.5322 1.72124 12.249 2.05437L5.51985 9.97104C5.23224 10.3094 4.72261 10.3451 4.3907 10.05L0.828197 6.88335C0.50141 6.59288 0.471975 6.09249 0.762452 5.7657C1.05293 5.43891 1.55332 5.40948 1.88011 5.69995L4.83765 8.32889L11.0426 1.02893Z' fill='%23ffffff'/%3e%3c/svg%3e");
+}
+.azo-tracking-form .form-check-box[type="checkbox"]:indeterminate {
+  background-color: var(--azo-tracking-primary);
+  border-color: var(--azo-tracking-primary);
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+.azo-tracking-form .form-check-box:disabled {
+  pointer-events: none;
+  filter: none;
+  opacity: 0.5;
+}
+.azo-tracking-form .form-check-box[disabled] ~ .form-check-label,
+.azo-tracking-form .form-check-box:disabled ~ .form-check-label {
+  cursor: default;
+  opacity: 0.5;
+}
+@media (prefers-reduced-motion: reduce) {
+  .azo-tracking-form .form-check-box {
+    transition: none;
+  }
+}
+.azo-tracking-form .form-check-box:focus {
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+}
+.azo-tracking-form .form-check-box:checked {
+  background-position: right center;
+  --bs-form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ffffff'/%3e%3c/svg%3e");
+}
+
+/* radio */
+.azo-tracking-form .form-check-radio {
+  --bs-form-check-bg: transparent;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  vertical-align: top;
+  background-color: none; /* var(--bs-form-check-bg) */
+  background-image: var(--bs-form-check-bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid var(--azo-tracking-text-300);
+  border-radius: 50%;
+}
+.azo-tracking-form .form-check-radio {
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23ffffff'/%3e%3c/svg%3e");
+}
+.form-check-radio-wrapper {
+  display: flex;
+  align-items: center;
+}
+.form-check-radio-wrapper label {
+  padding-left: 0.5rem;
+  font-size: 0.95rem;
+}
+.form-check-radio-wrapper:not(:first-child) {
+  margin-left: 1.5rem;
+}
+
+/* AZO-info-icon */
+
+.at-icon-description-container {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  overflow: visible !important;
+}
+.at-icon-description-container img {
+  width: 1rem;
+}
+.at-icon-description-container .info-icon {
+  margin-left: 5px;
+  cursor: help;
+}
+
+.at-description-tooltip {
+  position: absolute;
+  background-color: #666;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  white-space: normal;
+  word-wrap: break-word;
+  z-index: 1000;
+  display: none;
+  width: 250px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 12px;
+}
+
+.at-description-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #666 transparent transparent transparent;
+}
+
+@media screen and (max-width: 1050px) {
+  .at-icon-description-container {
+    display: none;
+  }
+}
+
+/* AZO Main */
+
+.azo-tracking_page #wpbody {
+  background-color: #f0f5f9;
+}
+
+.azo-tracking-container a {
+  transition: color 0.2s ease;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.azo-tracking-container a:focus {
+  outline: none;
+}
+
+/* define class name by root */
+.azo-tracking-text-900 {
+  color: #181c32;
+}
+.azo-tracking-text-800 {
+  color: #3f4254;
+}
+.azo-tracking-text-700 {
+  color: #5e6278;
+}
+.azo-tracking-text-600 {
+  color: #7e8299;
+}
+.azo-tracking-text-500 {
+  color: #a1a5b7;
+}
+.azo-tracking-text-400 {
+  color: #b5b5c3;
+}
+
+.azo-tracking_page #wpcontent {
+  padding-left: 0;
+}
+
+.azo-tracking-container {
+  width: 100%;
+  font-size: 1rem;
+}
+.azo-tracking-container p {
+  font-size: 1rem;
+}
+.azo-tracking-wrapper {
+  margin: 0 auto;
+  max-width: 1260px;
+}
+.azo-tracking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.azo-tracking-header .azo-tracking-brands {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.azo-tracking-header .azo-tracking-brands img {
+  width: 2.8rem;
+  height: 2.8rem;
+  padding-right: 0.3rem;
+  padding-bottom: 1rem;
+}
+
+.azo-tracking-header .azo-tracking-brands h3 {
+  font-size: 2.2rem;
+}
+.azo-tracking-header .azo-brands {
+  color: #fd9800;
+}
+.azo-tracking-header .azo-tracking-brands h3 span.pro-activated,
+#azo-tracking-settings .settings-license-info .sli-detail p span.pro {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    linear-gradient(101deg, #f0b167, #f1315a, #56a9cc);
+  text-transform: capitalize;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+a.upgrade-to-pro-btn {
+  border-radius: 100rem;
+  letter-spacing: 0.47px;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  color: #fff;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 1px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #f0b167, #f1315a, #56a9cc);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  user-select: none;
+}
+a.upgrade-to-pro-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 0 50px 0 rgba(157, 96, 212, 0.5);
+}
+
+.azo-tracking-user-container {
+  padding: 1.25rem;
+  position: relative;
+}
+
+.azo-tracking-header .azo-tracking-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+}
+
+.azo-tracking-header .azo-tracking-user span {
+  font-size: 1.2rem;
+  color: var(--azo-tracking-text-900);
+}
+
+.azo-tracking-header .azo-tracking-user img {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.azo-tracking-user-container .azo-tracking-user h3 {
+  font-weight: 600;
+  color: var(--azo-tracking-primary);
+}
+
+.azo-tracking-user-menu {
+  display: none;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 250px;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.azo-tracking-user-container:hover .azo-tracking-user-menu,
+.azo-tracking-user-container.active .azo-tracking-user-menu {
+  display: block;
+}
+
+.azo-tracking-user-menu .user-info {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.azo-tracking-user-menu .user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.azo-tracking-user-menu .user-info p {
+  margin: 4px 0;
+}
+
+.azo-tracking-user-menu .user-info h3 {
+  margin: 7px 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.azo-tracking-user-menu .manage-account,
+.azo-tracking-user-menu .sign-out {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.azo-tracking-user-menu .manage-account:hover,
+.azo-tracking-user-menu .sign-out:hover {
+  background-color: var(--azo-tracking-primary-bg-light);
+  cursor: pointer;
+}
+.azo-tracking-user-menu .manage-account:hover a,
+.azo-tracking-user-menu .sign-out:hover a {
+  color: var(--azo-tracking-primary);
+}
+
+.azo-tracking-user-menu .manage-account img,
+.azo-tracking-user-menu .sign-out img {
+  fill: var(--azo-tracking-primary);
+  padding-right: 10px;
+  width: 1rem;
+}
+
+.azo-tracking-user-menu a {
+  color: var(--azo-tracking-text-800);
+  text-decoration: none;
+}
+
+.azo-tracking-menu {
+  position: relative;
+}
+.azo-tracking-menu,
+.azo-tracking-menu-dashboard {
+  padding: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.625rem 1.25rem;
+  background-color: var(--azo-tracking-white);
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #c3c4c7;
+  box-shadow: 20px 20px 0px 0px rgba(76, 87, 125, 0.02);
+}
+.azo-tracking-menu li,
+.azo-tracking-menu-dashboard li {
+  margin-bottom: 1.5px;
+  z-index: 1;
+}
+.azo-tracking-menu li a,
+.azo-tracking-menu-dashboard li a {
+  color: unset;
+  font-size: 1.2rem;
+  padding: 1.25rem 1.5rem;
+  text-decoration: none;
+}
+.azo-tracking-menu li.active a,
+.azo-tracking-menu-dashboard li.active a {
+  color: var(--azo-tracking-primary);
+  border-bottom: 3px solid var(--azo-tracking-primary);
+}
+.azo-tracking-menu li a:hover,
+.azo-tracking-menu-dashboard li a:hover {
+  color: var(--azo-tracking-primary);
+  border-bottom: 3px solid var(--azo-tracking-primary);
+}
+
+/* custom-menu-animation */
+/* .azo-tracking-menu li.active a {
+  color: var(--azo-tracking-primary);
+}
+.azo-tracking-menu li a:hover,
+.azo-tracking-menu-dashboard li a:hover {
+  color: var(--azo-tracking-primary);
+}
+
+.azo-tracking-menu span {
+  position: absolute;
+  bottom: -1.5px;
+  left: 1.25rem;
+  width: 171.44px;
+  height: 3px;
+  background: var(--azo-tracking-primary);
+  border-radius: 8px;
+  transition: 0.5s ease;
+}
+
+.azo-tracking-menu li:nth-child(1):hover ~ span {
+  left: 1.25rem;
+}
+.azo-tracking-menu li:nth-child(2):hover ~ span {
+  left: 191.44px;
+  width: 102.65px;
+}
+.azo-tracking-menu li:nth-child(3):hover ~ span {
+  left: 294.09px;
+  width: 163.56px;
+}
+.azo-tracking-menu li:nth-child(4):hover ~ span {
+  left: 457.56px;
+  width: 188.68px;
+} */
+
+.azo-tracking-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 500px;
+  word-wrap: break-word;
+  margin-top: 1.5rem;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.625rem;
+}
+
+.azo-tracking-content {
+  margin: -0.625rem 1.25rem 1.25rem 1.25rem;
+  padding: 2rem 3rem;
+  min-height: 500px;
+  background-color: #f0f0f1;
+  border-radius: 0 0 5px 5px;
+  box-shadow: var(--azo-tracking-card-box-shadow-2);
+}
+
+.azo-tracking-content .azo-tracking-notification {
+  padding: 15px;
+  border-radius: 3px;
+  margin: 20px 20px 10px 0;
+  position: relative;
+  border: 1px solid #ba7b7b;
+  background: #f7e6e6;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.azo-tracking-content .azo-tracking-notification img {
+  width: 2rem;
+}
+
+.azo-settings-row {
+  margin: 2rem 0;
+  padding: 0.3rem 0;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.42);
+}
+.azo-settings-row:last-child {
+  border-bottom: none;
+}
+
+.azo-settings-row .azo-settings-row-item {
+  flex: 1;
+}
+
+.azo-settings-row .azo-settings-row-item:first-child {
+  flex: 0 0 20%;
+}
+
+.azo-settings-row span,
+.azo-settings-row label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.azo-settings-guildance {
+  font-style: italic;
+  color: var(--azo-tracking-text-700);
+  margin: 1.25rem 0;
+  font-size: 1rem;
+}
+
+.azo-settings-description {
+  color: var(--azo-tracking-text-400);
+}
+
+@media screen and (max-width: 1100px) {
+  .azo-tracking-content {
+    padding: 2rem 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .azo-tracking-menu {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .azo-tracking-menu li {
+    padding: 1rem;
+    text-align: center;
+  }
+  .azo-tracking-menu li a {
+    padding: 1rem;
+  }
+  .azo-settings-row {
+    flex-direction: column;
+  }
+}
+
+/* azo-tracking-support */
+
+#azo-tracking-support .head-support {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#azo-tracking-support .head-support h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+#azo-tracking-support .body-support {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  padding: 0 3rem;
+}
+#azo-tracking-support .body-support a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+}
+
+#azo-tracking-support .body-support .at-rp-card-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#azo-tracking-support .body-support .at-rp-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  outline: 1.6px solid transparent;
+  outline: 0.1rem solid transparent;
+  background-color: var(--azo-tracking-white);
+  box-shadow: var(--azo-tracking-card-box-shadow);
+}
+#azo-tracking-support .body-support .at-rp-card:hover {
+  transition: all 0.5s;
+  scale: 1.05;
+  cursor: pointer;
+}
+
+#azo-tracking-support .body-support .at-rp-card-wrapper-3col {
+  flex: 1;
+}
+
+#azo-tracking-support .body-support .at-rp-card .at-rp-card-top img {
+  width: 4rem;
+}
+#azo-tracking-support .body-support .at-rp-card .at-rp-card-mid p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+@media screen and (max-width: 1100px) {
+  #azo-tracking-support .body-support {
+    flex-direction: column;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  #azo-tracking-support .body-support {
+    width: 100%;
+    padding: 0;
+  }
+  #azo-tracking-support .body-support .at-rp-card .at-rp-card-mid p {
+    font-size: 0.85rem;
+  }
+
+  #azo-tracking-support .body-support .at-rp-card .at-rp-card-top img {
+    width: 2rem;
+  }
+}
+/* azo-tracking-dashboard */
+#azo-tracking-dashboard {
+}
+
+#azo-tracking-dashboard .head-dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#azo-tracking-dashboard .head-dashboard h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#azo-tracking-dashboard .head-dashboard form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 60%;
+  justify-content: flex-end;
+}
+
+#azo-tracking-dashboard .head-dashboard form #reportrange {
+  background: #fff;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--azo-tracking-primary);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+  width: 280px;
+}
+.daterangepicker .ranges li {
+  font-size: 1rem;
+}
+.daterangepicker .ranges li.active {
+  background-color: var(--azo-tracking-primary);
+  color: #fff;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: var(--azo-tracking-primary);
+}
+
+#azo-tracking-dashboard .head-dashboard form #reportrange img {
+  width: 1.3rem;
+}
+#azo-tracking-dashboard .head-dashboard form #reportrange img.date-dropdown {
+  width: 0.8rem;
+}
+
+#azo-tracking-dashboard .head-dashboard form .azo-tracking-view-stats {
+  padding: 1.15rem;
+  height: fit-content;
+}
+
+#azo-tracking-dashboard .body-dashboard {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card-wrapper,
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-wrapper
+  .at-rp-card-box-items {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-wrapper
+  .at-skeleton-loading-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-wrapper
+  .skeleton-box-container {
+  grid-template-columns: repeat(4, 1fr);
+}
+#azo-tracking-dashboard .body-dashboard .donut-charts-container,
+#azo-tracking-dashboard .body-dashboard .mini-lists-container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card-wrapper-4col {
+  grid-template-columns: repeat(4, 1fr);
+}
+#azo-tracking-dashboard .body-dashboard .at-rp-card-wrapper-3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card {
+  padding: 1rem;
+  border-radius: 8px;
+  outline: 1.6px solid transparent;
+  outline: 0.1rem solid transparent;
+  background-color: var(--azo-tracking-white);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card .no-data-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card .no-data-message span {
+  background: var(--azo-tracking-info);
+  color: #fff;
+  padding: 0.6rem;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+#azo-tracking-dashboard .body-dashboard .at-rp-card .no-data-message p {
+  text-align: center;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-item {
+  padding: 1rem;
+  border-radius: 8px;
+  outline: 1.6px solid transparent;
+  outline: 0.1rem solid transparent;
+  background-color: var(--azo-tracking-white);
+  box-shadow: var(--azo-tracking-card-box-shadow);
+  border: 1px solid var(--azo-tracking-primary);
+}
+#azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-top,
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-box-items
+  .at-rp-card-item-top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-top h4 {
+  font-size: 1.25rem;
+  color: var(--azo-tracking-primary);
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-box-items
+  .at-rp-card-item
+  .at-rp-card-item-top
+  h4 {
+  font-size: 1.25rem;
+  color: var(--azo-tracking-text-800);
+  font-weight: 700;
+  margin: 0;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-box-items
+  .at-rp-card-item
+  .at-rp-card-item-top
+  h4::after {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: var(--azo-tracking-primary);
+  content: "";
+  margin: 7px auto 10px;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card-item .at-rp-card-item-mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-item
+  .at-rp-card-item-mid
+  .at-rp-value {
+  font-size: 2rem;
+  color: var(--azo-tracking-text-800);
+  font-weight: 700;
+  margin: 0;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-item
+  .at-rp-card-item-mid
+  .at-rp-value
+  .azo_xl_f {
+  font-size: 12px;
+}
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-item
+  .at-rp-card-item-mid
+  .at-rp-trend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-item
+  .at-rp-card-item-mid
+  .at-rp-trend
+  .at-rp-trend-top {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-item
+  .at-rp-card-item-mid
+  .at-rp-trend
+  .at-rp-uptrend {
+  color: var(--azo-tracking-up-trend);
+  background-color: var(--azo-tracking-up-trend-light);
+}
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-item
+  .at-rp-card-item-mid
+  .at-rp-trend
+  .at-rp-downtrend {
+  color: var(--azo-tracking-down-trend);
+  background-color: var(--azo-tracking-down-trend-light);
+}
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-item
+  .at-rp-card-item-mid
+  .at-rp-trend
+  img {
+  padding-left: 5px;
+  width: 1.25rem;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-item
+  .at-rp-card-item-mid
+  .at-rp-trend-bottom {
+  color: #acbdc9;
+  font-size: 0.75rem;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-list table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 1rem;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-list th,
+#azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-list td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-list th {
+  font-weight: bold;
+  color: var(--azo-tracking-text-900);
+  padding: 1rem;
+  background-color: #f0f5f9;
+  border-bottom: 2px solid var(--azo-tracking-primary);
+}
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card
+  .at-rp-card-list
+  th:not(:first-child),
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card
+  .at-rp-card-list
+  td:not(:first-child) {
+  text-align: right;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-list td {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card
+  .at-rp-card-list
+  td
+  .at-rp-os-brand {
+  display: flex;
+  align-items: center;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card
+  .at-rp-card-list
+  td
+  .at-rp-os-brand
+  img {
+  width: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card
+  .at-rp-card-list
+  td
+  .at-rp-browser-brand {
+  display: flex;
+  align-items: center;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card
+  .at-rp-card-list
+  td
+  .at-rp-browser-brand
+  img {
+  width: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+.azo_flages {
+  background-image: url(../images/azo-flag-sprite.png);
+  background-repeat: no-repeat;
+  background-size: 351px 271px;
+  background-position: 0 -1px;
+  width: 24px;
+  height: 14px;
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  margin-right: 6px;
+}
+.azo_afghanistan {
+  background-position: -176px -136px;
+}
+.azo_angola {
+  background-position: -176px -151px;
+}
+.azo_albania {
+  background-position: -201px -91px;
+}
+.azo_united_arab_emirates {
+  background-position: -301px -91px;
+}
+.azo_argentina {
+  background-position: -251px -1px;
+}
+.azo_armenia {
+  background-position: -151px -91px;
+}
+.azo_french_southern_and_antarctic_lands {
+  background-position: -326px -196px;
+}
+.azo_australia {
+  background-position: -251px -16px;
+}
+.azo_austria {
+  background-position: -126px -91px;
+}
+.azo_azerbaijan {
+  background-position: -101px -91px;
+}
+.azo_burundi {
+  background-position: -76px -151px;
+}
+.azo_belgium {
+  background-position: -51px -91px;
+}
+.azo_benin {
+  background-position: -151px -151px;
+}
+.azo_burkina_faso {
+  background-position: -101px -151px;
+}
+.azo_bangladesh {
+  background-position: -126px -136px;
+}
+.azo_bulgaria {
+  background-position: -1px -91px;
+}
+.azo_bahamas {
+  background-position: -76px -46px;
+}
+.azo_bosnia_and_herzegovina {
+  background-position: -26px -91px;
+}
+.azo_belarus {
+  background-position: -76px -91px;
+}
+.azo_belize {
+  background-position: -26px -46px;
+}
+.azo_bermuda {
+  background-position: -226px -196px;
+}
+.azo_bolivia {
+  background-position: -226px -1px;
+}
+.azo_brazil {
+  background-position: -201px -1px;
+}
+.azo_brunei {
+  background-position: -76px -136px;
+}
+.azo_bhutan {
+  background-position: -101px -136px;
+}
+.azo_botswana {
+  background-position: -126px -151px;
+}
+.azo_central_african_republic {
+  background-position: -1px -151px;
+}
+.azo_canada {
+  background-position: -1px -46px;
+}
+.azo_switzerland {
+  background-position: -201px -46px;
+}
+.azo_chile {
+  background-position: -176px -1px;
+}
+.azo_china {
+  background-position: -26px -136px;
+}
+.azo_ivory_coast,
+.azo_cote_d_ivoire {
+  background-position: -101px -196px;
+}
+.azo_cameroon {
+  background-position: -51px -151px;
+}
+.azo_democratic_republic_of_the_congo {
+  background-position: -251px -31px;
+}
+.azo_republic_of_the_congo {
+  background-position: -276px -136px;
+}
+.azo_colombia {
+  background-position: -151px -1px;
+}
+.azo_costa_rica {
+  background-position: -326px -31px;
+}
+.azo_cuba {
+  background-position: -301px -31px;
+}
+.azo_northern_cyprus {
+  background-position: -251px -196px;
+}
+.azo_cyprus {
+  background-position: -301px -76px;
+}
+.azo_czech_republic {
+  background-position: -276px -76px;
+}
+.azo_germany {
+  background-position: -151px -76px;
+}
+.azo_djibouti {
+  background-position: -251px -136px;
+}
+.azo_denmark {
+  background-position: -251px -76px;
+}
+.azo_dominican_republic {
+  background-position: -251px -31px;
+}
+.azo_algeria {
+  background-position: -201px -151px;
+}
+.azo_ecuador {
+  background-position: -76px -1px;
+}
+.azo_egypt {
+  background-position: -201px -136px;
+}
+.azo_eritrea {
+  background-position: -76px -196px;
+}
+.azo_spain {
+  background-position: -251px -46px;
+}
+.azo_estonia {
+  background-position: -151px -211px;
+}
+.azo_ethiopia {
+  background-position: -51px -196px;
+}
+.azo_finland {
+  background-position: -226px -76px;
+}
+.azo_fiji {
+  background-position: -226px -16px;
+}
+.azo_falkland_islands {
+  background-position: -1px -211px;
+}
+.azo_france,
+.azo_reunion,
+.azo_martinique,
+.azo_mayotte {
+  background-position: -201px -76px;
+}
+.azo_gabon {
+  background-position: -26px -196px;
+}
+.azo_united_kingdom {
+  background-position: -151px -46px;
+}
+.azo_georgia {
+  background-position: -176px -76px;
+}
+.azo_ghana {
+  background-position: -326px -181px;
+}
+.azo_guinea {
+  background-position: -276px -181px;
+}
+.azo_gambia {
+  background-position: -1px -196px;
+}
+.azo_guinea_bissau {
+  background-position: -301px -181px;
+}
+.azo_equatorial_guinea {
+  background-position: -226px -136px;
+}
+.azo_greece {
+  background-position: -126px -76px;
+}
+.azo_greenland {
+  background-position: -101px -211px;
+}
+.azo_guatemala {
+  background-position: -176px -31px;
+}
+.azo_french_guiana {
+  background-position: -126px -211px;
+}
+.azo_guyana {
+  background-position: -126px -1px;
+}
+.azo_honduras {
+  background-position: -126px -31px;
+}
+.azo_croatia {
+  background-position: -326px -76px;
+}
+.azo_haiti {
+  background-position: -326px -61px;
+}
+.azo_hungary {
+  background-position: -101px -76px;
+}
+.azo_indonesia {
+  background-position: -76px -61px;
+}
+.azo_india {
+  background-position: -326px -121px;
+}
+.azo_ireland {
+  background-position: -51px -76px;
+}
+.azo_iran {
+  background-position: -276px -121px;
+}
+.azo_iraq {
+  background-position: -251px -121px;
+}
+.azo_iceland {
+  background-position: -76px -76px;
+}
+.azo_israel {
+  background-position: -176px -211px;
+}
+.azo_italy {
+  background-position: -26px -76px;
+}
+.azo_jamaica {
+  background-position: -101px -31px;
+}
+.azo_jordan {
+  background-position: -201px -121px;
+}
+.azo_japan {
+  background-position: -226px -121px;
+}
+.azo_kazakhstan {
+  background-position: -176px -121px;
+}
+.azo_kenya {
+  background-position: -251px -181px;
+}
+.azo_kyrgyzstan {
+  background-position: -51px -211px;
+}
+.azo_cambodia {
+  background-position: -51px -136px;
+}
+.azo_south_korea {
+  background-position: -126px -121px;
+}
+.azo_kosovo {
+  background-position: -301px -196px;
+}
+.azo_kuwait {
+  background-position: -101px -121px;
+}
+.azo_laos {
+  background-position: -51px -121px;
+}
+.azo_lebanon {
+  background-position: -26px -121px;
+}
+.azo_liberia {
+  background-position: -201px -181px;
+}
+.azo_libya {
+  background-position: -176px -181px;
+}
+.azo_sri_lanka {
+  background-position: -101px -106px;
+}
+.azo_lesotho {
+  background-position: -226px -181px;
+}
+.azo_lithuania {
+  background-position: -301px -61px;
+}
+.azo_luxembourg {
+  background-position: -276px -61px;
+}
+.azo_latvia {
+  background-position: -1px -76px;
+}
+.azo_morocco {
+  background-position: -26px -181px;
+}
+.azo_moldova {
+  background-position: -201px -61px;
+}
+.azo_madagascar {
+  background-position: -151px -181px;
+}
+.azo_mexico {
+  background-position: -76px -31px;
+}
+.azo_macedonia {
+  background-position: -251px -61px;
+}
+.azo_mali {
+  background-position: -101px -181px;
+}
+.azo_myanmar {
+  background-position: -26px -16px;
+}
+.azo_montenegro {
+  background-position: -151px -61px;
+}
+.azo_mongolia {
+  background-position: -301px -106px;
+}
+.azo_mozambique {
+  background-position: -1px -181px;
+}
+.azo_mauritania {
+  background-position: -76px -181px;
+}
+.azo_malawi {
+  background-position: -126px -181px;
+}
+.azo_malaysia {
+  background-position: -1px -121px;
+}
+.azo_namibia {
+  background-position: -326px -166px;
+}
+.azo_new_caledonia {
+  background-position: -276px -196px;
+}
+.azo_niger {
+  background-position: -301px -166px;
+}
+.azo_nigeria {
+  background-position: -276px -166px;
+}
+.azo_nicaragua {
+  background-position: -51px -31px;
+}
+.azo_netherlands {
+  background-position: -276px -61px;
+}
+.azo_norway {
+  background-position: -101px -61px;
+}
+.azo_nepal {
+  background-position: -126px -196px;
+}
+.azo_new_zealand {
+  background-position: -101px -16px;
+}
+.azo_oman {
+  background-position: -276px -106px;
+}
+.azo_pakistan {
+  background-position: -251px -106px;
+}
+.azo_panama {
+  background-position: -201px -196px;
+}
+.azo_peru {
+  background-position: -26px -1px;
+}
+.azo_philippines {
+  background-position: -226px -106px;
+}
+.azo_papua_new_guinea {
+  background-position: -51px -16px;
+}
+.azo_poland {
+  background-position: -76px -61px;
+}
+.azo_puerto_rico {
+  background-position: -176px -196px;
+}
+.azo_north_korea {
+  background-position: -151px -121px;
+}
+.azo_portugal {
+  background-position: -76px -211px;
+}
+.azo_paraguay {
+  background-position: -226px -211px;
+}
+.azo_qatar {
+  background-position: -201px -106px;
+}
+.azo_romania {
+  background-position: -26px -61px;
+}
+.azo_russia {
+  background-position: -176px -106px;
+}
+.azo_rwanda {
+  background-position: -251px -166px;
+}
+.azo_western_sahara {
+  background-position: -201px -121px;
+}
+.azo_saudi_arabia {
+  background-position: -151px -106px;
+}
+.azo_sudan {
+  background-position: -51px -166px;
+}
+.azo_south_sudan {
+  background-position: -76px -166px;
+}
+.azo_senegal {
+  background-position: -51px -151px;
+}
+.azo_solomon_islands {
+  background-position: -1px -16px;
+}
+.azo_sierra_leone {
+  background-position: -151px -166px;
+}
+.azo_el_salvador {
+  background-position: -51px -31px;
+}
+.azo_somaliland {
+  background-position: -251px -211px;
+}
+.azo_somalia {
+  background-position: -126px -166px;
+}
+.azo_republic_of_serbia {
+  background-position: -326px -46px;
+}
+.azo_suriname {
+  background-position: -151px -196px;
+}
+.azo_slovakia {
+  background-position: -301px -46px;
+}
+.azo_slovenia {
+  background-position: -276px -46px;
+}
+.azo_sweden {
+  background-position: -226px -46px;
+}
+.azo_swaziland {
+  background-position: -26px -166px;
+}
+.azo_syria {
+  background-position: -76px -106px;
+}
+.azo_chad {
+  background-position: -26px -61px;
+}
+.azo_togo {
+  background-position: -326px -151px;
+}
+.azo_thailand {
+  background-position: -26px -106px;
+}
+.azo_tajikistan {
+  background-position: -51px -106px;
+}
+.azo_turkmenistan {
+  background-position: -26px -211px;
+}
+.azo_east_timor,
+.azo_timor_leste {
+  background-position: -1px -136px;
+}
+.azo_trinidad_and_tobago {
+  background-position: -301px -16px;
+}
+.azo_tunisia {
+  background-position: -301px -151px;
+}
+.azo_turkey {
+  background-position: -1px -106px;
+}
+.azo_united_republic_of_tanzania {
+  background-position: -1px -166px;
+}
+.azo_uganda {
+  background-position: -276px -151px;
+}
+.azo_ukraine {
+  background-position: -176px -46px;
+}
+.azo_uruguay {
+  background-position: -51px -256px;
+}
+.azo_united_states {
+  background-position: -276px -16px;
+}
+.azo_uzbekistan {
+  background-position: -276px -91px;
+}
+.azo_venezuela {
+  background-position: -76px -1px;
+}
+.azo_vietnam {
+  background-position: -251px -91px;
+}
+.azo_vanuatu {
+  background-position: -276px -1px;
+}
+.azo_west_bank {
+  background-position: -201px -121px;
+}
+.azo_yemen {
+  background-position: -276px -211px;
+}
+.azo_south_africa {
+  background-position: -101px -166px;
+}
+.azo_zambia {
+  background-position: -251px -151px;
+}
+.azo_zimbabwe {
+  background-position: -226px -151px;
+}
+.azo_singapore {
+  background-position: -276px -241px;
+}
+.azo_serbia {
+  background-position: -326px -46px;
+}
+.azo_hong_kong {
+  background-position: -26px -241px;
+}
+.azo_taiwan {
+  background-position: -301px -211px;
+}
+.azo_mauritius {
+  background-position: -51px -181px;
+}
+.azo_bahrain {
+  background-position: -151px -136px;
+}
+.azo_palestine {
+  background-position: -126px -241px;
+}
+.azo_maldives {
+  background-position: -101px -226px;
+}
+.azo_barbados {
+  background-position: -1px -256px;
+}
+.azo_malta {
+  background-position: -226px -226px;
+}
+.azo_guadeloupe {
+  background-position: -51px -241px;
+}
+.azo_macau {
+  background-position: -201px -241px;
+}
+.azo_dominica {
+  background-position: -276px -31px;
+}
+.azo_st_vincent_grenadines {
+  background-position: -326px -16px;
+}
+.azo_curacao {
+  background-position: -176px -226px;
+}
+.azo_guam {
+  background-position: -51px -226px;
+}
+.azo_jersey {
+  background-position: -251px -226px;
+}
+.azo_antigua_barbuda {
+  background-position: -101px -46px;
+}
+.azo_french_polynesia {
+  background-position: -326px -211px;
+}
+.azo_grenada {
+  background-position: -201px -31px;
+}
+.azo_aruba {
+  background-position: -1px -226px;
+}
+.azo_congo_drc {
+  background-position: -326px -226px;
+}
+.azo_cayman_islands {
+  background-position: -26px -256px;
+}
+.azo_guernsey {
+  background-position: -151px -241px;
+}
+.azo_u_s_virgin_islands {
+  background-position: -151px -226px;
+}
+.azo_seychelles {
+  background-position: -176px -166px;
+}
+.azo_cape_verde {
+  background-position: -26px -151px;
+}
+.azo_congo_republic {
+  background-position: -276px -136px;
+}
+.azo_st_kitts_nevis {
+  background-position: -26px -31px;
+}
+.azo_anguilla {
+  background-position: -326px -241px;
+}
+.azo_gibraltar {
+  background-position: -176px -241px;
+}
+.azo_st_martin,
+.azo_sint_maarten {
+  background-position: -276px -226px;
+}
+.azo_northern_mariana_islands {
+  background-position: -76px -226px;
+}
+.azo_andorra {
+  background-position: -251px -241px;
+}
+.azo_british_virgin_islands {
+  background-position: -101px -241px;
+}
+.azo_san_marino {
+  background-position: -76px -241px;
+}
+.azo_faroe_islands {
+  background-position: -301px -241px;
+}
+.azo_kiribati {
+  background-position: -201px -16px;
+}
+.azo_turks_caicos_islands {
+  background-position: -126px -226px;
+}
+
+#azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-list-detail td {
+  margin-bottom: 0;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card
+  .at-rp-card-list-detail
+  th:not(:first-child),
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card
+  .at-rp-card-list-detail
+  td:not(:first-child) {
+  width: 200px;
+  text-align: center;
+}
+
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card
+  .at-rp-card-list-detail
+  td:first-child {
+  display: flex;
+  flex-direction: column;
+}
+#azo-tracking-dashboard .fixed-width-top-pages {
+  width: 350px;
+}
+@media screen and (max-width: 1100px) {
+  #azo-tracking-dashboard
+    .body-dashboard
+    .at-rp-card-wrapper
+    .at-rp-card-box-items,
+  #azo-tracking-dashboard
+    .body-dashboard
+    #general_stats
+    .skeleton-box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #azo-tracking-dashboard .body-dashboard .at-rp-card {
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  #azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-list table {
+    overflow-x: auto;
+  }
+
+  #azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-top {
+    width: 100%;
+  }
+
+  #azo-tracking-dashboard .body-dashboard .at-rp-card .at-rp-card-top h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #azo-tracking-dashboard .head-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #azo-tracking-dashboard .head-dashboard form {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 550px) {
+  #azo-tracking-dashboard
+    .body-dashboard
+    .at-rp-card-wrapper
+    .at-rp-card-box-items,
+  #azo-tracking-dashboard .body-dashboard .at-rp-card-wrapper,
+  #azo-tracking-dashboard
+    .body-dashboard
+    #general_stats
+    .skeleton-box-container,
+  #azo-tracking-dashboard .body-dashboard .donut-charts-container,
+  #azo-tracking-dashboard .body-dashboard .mini-lists-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* azo-tracking-support */
+#azo-tracking-support {
+}
+
+/* azo-tracking-setting*/
+#azo-tracking-settings {
+  display: none;
+}
+/* azo-tracking-authentication*/
+#azo-tracking-authentication {
+  display: none;
+}
+
+#azo-tracking-authentication .azo-auth-logout-ga,
+#azo-tracking-authentication .azo-auth-login-ga {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: filter 150ms ease-out 0s;
+  line-height: 1;
+  color: var(--azo-tracking-text-900);
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 1px 1px);
+}
+
+#azo-tracking-authentication .azo-auth-logout-ga:hover,
+#azo-tracking-authentication .azo-auth-login-ga:hover {
+  filter: drop-shadow(rgba(0, 0, 0, 0.2) 0px 2px 4px);
+}
+
+#azo-tracking-authentication .azo-auth-logout-ga img,
+#azo-tracking-authentication .azo-auth-login-ga img {
+  width: 1.2rem;
+}
+
+#at-rp-chart-skeleton.skeleton.skeleton-chart-columns {
+  --chart-h: 375px;
+}
+#azo-tracking-dashboard
+  .body-dashboard
+  .at-rp-card-wrapper
+  .skeleton-circle-container {
+  margin: auto;
+}
+/* azo-tracking-profile*/
+#azo-tracking-profile {
+  display: none;
+}
+/* azo-tracking-configuration*/
+#azo-tracking-configuration {
+  display: none;
+}
+/* azo-tracking-setting-dashboard*/
+#azo-tracking-dashboard-page {
+  display: none;
+}
+
+/* AZO Spinner */
+.azo-spinner {
+  position: relative;
+}
+.azo-spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-top: -0.65rem;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-right: 2px solid transparent;
+  -webkit-animation: animation-spinner 0.5s linear infinite;
+  animation: animation-spinner 0.5s linear infinite;
+}
+.azo-spinner.spinner-dark:before {
+  border: 2px solid var(--azo-ads-text-800);
+  border-right: 2px solid transparent;
+}
+.azo-spinner.spinner-left {
+  padding-left: 2.75rem;
+}
+.azo-spinner.spinner-left:before {
+  right: auto;
+  left: 0.75rem;
+}
+
+@-webkit-keyframes animation-spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes animation-spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Select Styles */
+.custom-select {
+  position: relative !important;
+  width: 300px !important;
+  display: none !important; /* Remove default appearance */
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important;
+  padding: 10px !important;
+  cursor: pointer !important;
+}
+
+.custom-select:focus {
+  border-color: #007bff !important;
+  background-color: #e9ecef !important;
+}
+
+.custom-select::after {
+  content: "▼" !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-50%) !important;
+  pointer-events: none !important;
+}
+
+/* Custom Select Wrapper */
+.custom-select-wrapper {
+  position: relative;
+  width: 370px;
+}
+
+.custom-select-display {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  position: relative;
+}
+
+.custom-select-display.active {
+  border-color: #007bff;
+  background-color: #fff;
+}
+
+.custom-options {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 100;
+  display: none;
+  max-height: 200px;
+  overflow-y: scroll;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+.custom-options div {
+  padding: 10px;
+  cursor: pointer;
+}
+.custom-options div:not(:last-child) {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.custom-options div:hover {
+  background-color: var(--azo-tracking-primary);
+  color: #fff;
+}
+
+/* Highlight selected options */
+.custom-options .selected {
+  color: #ccc;
+  pointer-events: none;
+}
+.custom-options .selected:hover {
+  background-color: #fff;
+  color: #ccc;
+}
+
+/* Optgroup Label Styles */
+.optgroup-label {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f5f5f5;
+  pointer-events: none;
+}
+
+/* Selected Items Styles */
+.selected-item {
+  padding: 0.25rem;
+  background-color: var(--azo-tracking-white);
+  color: var(--azo-tracking-primary);
+  margin: 0.1rem 0.2rem 0 0;
+  border: 1px solid var(--azo-tracking-primary);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.remove-item {
+  cursor: pointer;
+  color: var(--azo-tracking-primary);
+}
+
+.clear-all {
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* AZO Tracking Table Pagination */
+#azo-tracking-dashboard .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#azo-tracking-dashboard .page-link {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--azo-tracking-primary);
+  cursor: pointer;
+}
+
+#azo-tracking-dashboard .page-link:hover {
+  background-color: #f1f1f1;
+}
+
+#azo-tracking-dashboard .page-link.active {
+  background-color: var(--azo-tracking-primary);
+  color: white;
+  border-color: var(--azo-tracking-primary);
+}
